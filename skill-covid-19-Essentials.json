@@ -1,0 +1,1321 @@
+{
+  "intents": [
+    {
+      "intent": "CovidQA",
+      "examples": [
+        {
+          "text": "Can i ask Covid questions??"
+        },
+        {
+          "text": "Query related to QA"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Enquiry",
+      "examples": [
+        {
+          "text": "Can i have the list of vegetables?"
+        },
+        {
+          "text": "vegetable list please!!"
+        },
+        {
+          "text": "what vegetables are there??"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Greetings",
+      "examples": [
+        {
+          "text": "Good Evening"
+        },
+        {
+          "text": "Good Morning"
+        },
+        {
+          "text": "Hello"
+        },
+        {
+          "text": "Hi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "placing_order",
+      "examples": [
+        {
+          "text": "Can I place the order?"
+        },
+        {
+          "text": "I want to buy the vegetables."
+        },
+        {
+          "text": "yes"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "addnextvegetable",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "addnextvegetable",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "chillies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cucumber",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "onion",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "raddish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tomato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vegetable_list",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "billing",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "billing",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "CovidQA",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Precautions",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "Symptoms",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "email",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "email",
+          "patterns": [
+            "[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,}$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "enquiry",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "vegetable list",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "vegetables",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "exit",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Exit",
+          "synonyms": [
+            "exit"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Greetings",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good Evening",
+          "synonyms": [
+            "gud evng"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "Good Morning",
+          "synonyms": [
+            "gm",
+            "gudmng"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "modepayment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "COD",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "UPI",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "name",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "name",
+          "patterns": [
+            "^[a-zA-Z'-]+$"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "payment",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "cash on delivery",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "online payment",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "Placing_order",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "buy",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "order",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "vegetable_list",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "chillies",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "cucumber",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "onion",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "placing_order",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "potato",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "raddish",
+          "synonyms": []
+        },
+        {
+          "type": "synonyms",
+          "value": "tomato",
+          "synonyms": []
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I didn't understand. You can try rephrasing."
+              },
+              {
+                "text": "Can you reword your statement? I'm not understanding."
+              },
+              {
+                "text": "I didn't get your meaning."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_2_1602226618536",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "Can you provide me the vegetables you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_4_1602179954316",
+      "event_name": "focus",
+      "dialog_node": "handler_1_1602179954339",
+      "previous_sibling": "handler_6_1602179954339"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_2_1602180038338",
+      "context": {
+        "number": "@sys-number"
+      },
+      "conditions": "@sys-number",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602180038346"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_5_1602226647057",
+      "event_name": "input",
+      "dialog_node": "handler_2_1602226647083"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_8_1602175888617",
+      "event_name": "focus",
+      "dialog_node": "handler_4_1602175888641",
+      "previous_sibling": "handler_5_1602175888641"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_8_1602175888617",
+      "event_name": "input",
+      "dialog_node": "handler_5_1602175888641"
+    },
+    {
+      "type": "event_handler",
+      "output": {
+        "text": {
+          "values": [
+            "How many kg you want?"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "slot_2_1602180038338",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1602180038346",
+      "previous_sibling": "handler_2_1602180038346"
+    },
+    {
+      "type": "event_handler",
+      "parent": "node_3_1602179912594",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1602184242391",
+      "previous_sibling": "node_1_1602219501063"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_5_1602226647057",
+      "event_name": "focus",
+      "dialog_node": "handler_5_1602226647083",
+      "previous_sibling": "handler_2_1602226647083"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_4_1602179954316",
+      "context": {
+        "vegetable_list": "@vegetable_list"
+      },
+      "conditions": "@vegetable_list",
+      "event_name": "input",
+      "dialog_node": "handler_6_1602179954339"
+    },
+    {
+      "type": "event_handler",
+      "parent": "slot_1_1602227012796",
+      "event_name": "input",
+      "dialog_node": "handler_6_1602227012819"
+    },
+    {
+      "type": "event_handler",
+      "output": {},
+      "parent": "slot_1_1602227012796",
+      "event_name": "focus",
+      "dialog_node": "handler_7_1602227012819",
+      "previous_sibling": "handler_6_1602227012819"
+    },
+    {
+      "type": "standard",
+      "title": "Enquiry",
+      "output": {
+        "generic": [
+          {
+            "title": "Available vegetables are:",
+            "options": [
+              {
+                "label": "Onion",
+                "value": {
+                  "input": {
+                    "text": "onion"
+                  }
+                }
+              },
+              {
+                "label": "Raddish",
+                "value": {
+                  "input": {
+                    "text": "raddish"
+                  }
+                }
+              },
+              {
+                "label": "Cucumber",
+                "value": {
+                  "input": {
+                    "text": "cucumber"
+                  }
+                }
+              },
+              {
+                "label": "Tomato",
+                "value": {
+                  "input": {
+                    "text": "tomato"
+                  }
+                }
+              },
+              {
+                "label": "Potato",
+                "value": {
+                  "input": {
+                    "text": "potato"
+                  }
+                }
+              },
+              {
+                "label": "Chillies",
+                "value": {
+                  "input": {
+                    "text": "chillies"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          },
+          {
+            "values": [
+              {
+                "text": "Special offer for today: 10% discount on total bill. \nClick on vegetable to know the price.\nDo you wish to order??"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Enquiry || @enquiry",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_1_1602177606936",
+      "digress_out": "allow_all_never_return",
+      "previous_sibling": "node_2_1602254502823"
+    },
+    {
+      "type": "standard",
+      "title": "deletingcontext",
+      "output": {
+        "deleted": "<?context.remove('vegetable_list')?><?context.remove('number')?>",
+        "generic": [
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "addnextvegetable",
+                "value": {
+                  "input": {
+                    "text": "addnextvegetable"
+                  }
+                }
+              },
+              {
+                "label": "billing",
+                "value": {
+                  "input": {
+                    "text": "billing"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1602179912594",
+      "conditions": "true",
+      "dialog_node": "node_1_1602219501063"
+    },
+    {
+      "type": "standard",
+      "title": "CovidQA",
+      "output": {
+        "generic": [
+          {
+            "title": "Queries related to Covid-19?? Select from the options below.",
+            "options": [
+              {
+                "label": "Symptoms",
+                "value": {
+                  "input": {
+                    "text": "Symptoms"
+                  }
+                }
+              },
+              {
+                "label": "Precautions",
+                "value": {
+                  "input": {
+                    "text": "Precautions"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "#CovidQA || @CovidQA",
+      "dialog_node": "node_2_1602226618536",
+      "previous_sibling": "node_3_1602179912594"
+    },
+    {
+      "type": "standard",
+      "title": "Greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#Greetings || @Greetings",
+      "dialog_node": "node_2_1602254502823",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "name ",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi $name, Thanks  for getting in touch with us . Please enter your email id."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602254502823",
+      "context": {
+        "name": "@name.literal"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "@name",
+      "dialog_node": "node_3_1602154042684"
+    },
+    {
+      "type": "frame",
+      "title": "Placing_order",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your order of $number kgs of $vegetable_list is added to cart. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "#placing_order || @Placing_order:order || @addnextvegetable",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_3_1602179912594",
+      "digress_out": "allow_all",
+      "previous_sibling": "node_1_1602177606936",
+      "digress_out_slots": "allow_all"
+    },
+    {
+      "type": "standard",
+      "title": "email",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your email id $email will be used for further references. You can view vegetable list and shop vegetables."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1602154042684",
+      "context": {
+        "email": "@email.literal"
+      },
+      "conditions": "@email",
+      "dialog_node": "node_3_1602226249157"
+    },
+    {
+      "type": "standard",
+      "title": "mode of payment",
+      "parent": "node_7_1602223791121",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@modepayment",
+      "dialog_node": "node_5_1602224109585"
+    },
+    {
+      "type": "standard",
+      "title": "vegetable_list",
+      "parent": "node_1_1602177606936",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1602177606936"
+      },
+      "conditions": "@vegetable_list",
+      "dialog_node": "node_6_1602178338658"
+    },
+    {
+      "type": "standard",
+      "title": "covidqueries",
+      "parent": "node_2_1602226618536",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@CovidQA",
+      "dialog_node": "node_6_1602226963048"
+    },
+    {
+      "type": "standard",
+      "title": "billing",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Hey $name,Your cart items are billed. 10% Discount applied on total bill.  Select payment method to proceed. ",
+            "options": [
+              {
+                "label": "COD",
+                "value": {
+                  "input": {
+                    "text": "COD"
+                  }
+                }
+              },
+              {
+                "label": "UPI",
+                "value": {
+                  "input": {
+                    "text": "UPI"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1602219501063",
+      "conditions": "@billing",
+      "dialog_node": "node_7_1602223791121"
+    },
+    {
+      "type": "standard",
+      "title": "exit",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Bye Bye.. Thanks for visiting us :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602226963048",
+      "conditions": "@exit",
+      "dialog_node": "node_8_1602419746669"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening!!How can I help you.?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_10_1602066392260",
+      "previous_sibling": "response_4_1602066351707"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602226618536",
+      "disabled": true,
+      "dialog_node": "response_1_1602226659954",
+      "previous_sibling": "node_6_1602226963048"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:40/- per kg. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:onion",
+      "dialog_node": "response_3_1602178374415"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning!!How can I help you.?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_4_1602066351707"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Afternoon!!How can I help you.?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "disabled": true,
+      "conditions": "@Greetings:(Good Afternoon)",
+      "dialog_node": "response_4_1602066428846",
+      "previous_sibling": "response_10_1602066392260"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Your UPI payment is accepted. Bill will be mailed to $email. Thank you for shopping with us!!Keep Shopping :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Further you can select anyone.",
+            "options": [
+              {
+                "label": "Covid QA",
+                "value": {
+                  "input": {
+                    "text": "Covid QA"
+                  }
+                }
+              },
+              {
+                "label": "Exit",
+                "value": {
+                  "input": {
+                    "text": "Exit"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1602224109585",
+      "conditions": "@modepayment:UPI",
+      "dialog_node": "response_4_1602224222782"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Pay cash on delivery. Bill will be mailed to $email.  Thank You for shopping with us!!Keep Shopping :) "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Further You can select anyone.",
+            "options": [
+              {
+                "label": "Covid QA",
+                "value": {
+                  "input": {
+                    "text": "Covid QA"
+                  }
+                }
+              },
+              {
+                "label": "Exit",
+                "value": {
+                  "input": {
+                    "text": "Exit"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_5_1602224109585",
+      "conditions": "@modepayment:COD",
+      "dialog_node": "response_4_1602224280507",
+      "previous_sibling": "response_4_1602224222782"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:40/- per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:tomato",
+      "dialog_node": "response_5_1602178432355",
+      "previous_sibling": "response_3_1602178374415"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:30/- per kg."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:raddish",
+      "dialog_node": "response_5_1602178457753",
+      "previous_sibling": "response_5_1602178432355"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:50/-per kg."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:cucumber",
+      "dialog_node": "response_5_1602178476925",
+      "previous_sibling": "response_5_1602178457753"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "title": "vegeTABLES",
+            "options": [
+              {
+                "label": "Raddish",
+                "value": {
+                  "input": {
+                    "text": "Raddish"
+                  }
+                }
+              },
+              {
+                "label": "cucumber",
+                "value": {
+                  "input": {
+                    "text": "cucumber"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1602154042684",
+      "disabled": true,
+      "conditions": "@vegetables",
+      "dialog_node": "response_7_1602154124811",
+      "previous_sibling": "slot_8_1602175888617"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:60/- per kg"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:chillies",
+      "dialog_node": "response_7_1602178517554",
+      "previous_sibling": "response_8_1602178495137"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Running nose, Dry cough, Soar Throat, Fever. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select next",
+            "options": [
+              {
+                "label": "Covid QA",
+                "value": {
+                  "input": {
+                    "text": "Covid QA"
+                  }
+                }
+              },
+              {
+                "label": "Exit",
+                "value": {
+                  "input": {
+                    "text": "Exit"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1602226963048",
+      "conditions": "@CovidQA:Symptoms",
+      "dialog_node": "response_7_1602227028716",
+      "previous_sibling": "node_8_1602419746669"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi!! How can I help you??Please enter your name!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602254502823",
+      "conditions": "anything_else",
+      "dialog_node": "response_7_1602254749955",
+      "previous_sibling": "response_9_1602254616027"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Price:30/- per kg."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1602178338658",
+      "conditions": "@vegetable_list:potato",
+      "dialog_node": "response_8_1602178495137",
+      "previous_sibling": "response_5_1602178476925"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Step out of house only if necessary. Wash your hands frequently. Wear proper masks. Maintain Social Distancing."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "Select to continue.",
+            "options": [
+              {
+                "label": "Covid QA",
+                "value": {
+                  "input": {
+                    "text": "Covid QA"
+                  }
+                }
+              },
+              {
+                "label": "Exit",
+                "value": {
+                  "input": {
+                    "text": "Exit"
+                  }
+                }
+              }
+            ],
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_6_1602226963048",
+      "conditions": "@CovidQA:Precautions",
+      "dialog_node": "response_8_1602227101539",
+      "previous_sibling": "response_7_1602227028716"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Morning !! How can I help you?? Please enter your name!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602254502823",
+      "conditions": "@Greetings:(Good Morning)",
+      "dialog_node": "response_9_1602254574729",
+      "previous_sibling": "node_3_1602154042684"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Good Evening!! How can I help you?? Please enter your name!!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1602254502823",
+      "conditions": "@Greetings:(Good Evening)",
+      "dialog_node": "response_9_1602254616027",
+      "previous_sibling": "response_9_1602254574729"
+    },
+    {
+      "type": "slot",
+      "parent": "node_6_1602226963048",
+      "dialog_node": "slot_1_1602227012796",
+      "previous_sibling": "response_8_1602227101539"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1602179912594",
+      "variable": "$number",
+      "dialog_node": "slot_2_1602180038338",
+      "previous_sibling": "slot_4_1602179954316"
+    },
+    {
+      "type": "slot",
+      "output": {},
+      "parent": "node_3_1602179912594",
+      "variable": "$vegetable_list",
+      "dialog_node": "slot_4_1602179954316",
+      "previous_sibling": "handler_5_1602184242391"
+    },
+    {
+      "type": "slot",
+      "parent": "node_2_1602226618536",
+      "dialog_node": "slot_5_1602226647057",
+      "previous_sibling": "response_1_1602226659954"
+    },
+    {
+      "type": "slot",
+      "parent": "node_3_1602154042684",
+      "dialog_node": "slot_8_1602175888617",
+      "previous_sibling": "node_3_1602226249157"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hello. I am a covid-19 Vegetable essentials  bot capable of displaying the list of vegetables and  take the order of vegetables."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "covid-19 Essentials",
+  "language": "en",
+  "description": ""
+}
